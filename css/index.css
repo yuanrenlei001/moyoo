@@ -15,7 +15,7 @@
 .hot_title_color span:first-child {background: #fff;}
 .hot_title_color span:last-child {background: #f08512;}
 .hot_sort {width:7.11rem;position: relative;margin:.14rem auto 0;}
-.hot_sort li {width:7.11rem;height:2.2rem;background: #fff;padding-top: .24rem;}
+.hot_sort>ul>li {width:7.11rem;height:2.2rem;background: #fff;padding-top: .24rem;margin-bottom: .22rem;}
 .hot_sort .hot_num {width:6.71rem;position: relative;margin: auto;}
 .hot_sort .hot_num_top {width:6.71rem;height:1.58rem;border-bottom: 1px solid #eee;}
 .hot_num_top_left , .hot_num_top_right {display: inline-block;vertical-align: top;}
@@ -24,16 +24,37 @@
 .hot_num_top_left img {width:1.13rem;height:1.13rem;}
 .hot_num_top_left {margin-right: .2rem;}
 .hot_num_top_right {color: #333;}
-.hot_num_top_right p {line-height: .36rem;width:3.67rem;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
+.hot_num_top_right p {line-height: .36rem;width:3.9rem;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow: hidden;}
 .hot_num_top_right .hot_num_top_right_01 {font-size: .28rem;}
 .hot_num_top_right .hot_num_top_right_01 i {font-size: .2rem;color: #4bb7ea;}
 .hot_num_top_right .hot_num_top_right_02 {font-size: .24rem;}
-.hot_num_top_right .hot_num_top_right_02 span:first-child i {font-size: .4rem;}
+.hot_num_top_right .hot_num_top_right_02 span:first-child i {font-size: .4rem;margin-left: -.08rem;}
 .hot_num_top_right .hot_num_top_right_02 span:last-child i {font-size: .3rem;}
 .hot_num_top_right .hot_num_top_right_03 {font-size: .24rem;}
 .hot_num_top_right .hot_num_top_right_03 i {font-size: .28rem;}
 .hot_num_top_right .hot_num_top_right_04 {font-size: .24rem;}
-
+.hot_link {position: absolute;top:0;right:0;z-index: 99;}
+.hot_link img {width:.28rem;height:.28rem;}
+.hot_num_bottom {height:.6rem;line-height: .6rem;}
+.hot_sort .hot_style  span{border: 1px solid #ffea98;background: #fcffd4;color: #333;font-size: .2rem;padding: .05rem .03rem;}
+.opacity{  -webkit-animation: opacity 0.3s linear;  animation: opacity 0.3s linear;  }
+@-webkit-keyframes opacity {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@keyframes opacity {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.dropload-down {text-align: center;margin: .3rem 0;}
 
 
 

@@ -9,6 +9,7 @@
     <title>猫友网 &nbsp;&nbsp; 一站式人力共享平台 找美工 找UI 找前端</title>
     <meta name="keywords" content="{$web_config.web_keyword}"/>
     <meta name="description" content="{$web_config.web_description}"/>
+    <link rel="icon" href="./images/ico.ico">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -17,6 +18,7 @@
     <script src="./js/adaptive-version2.js"></script>
     <script src="./js/idangerous.swiper.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/dropload.js"></script>
 </head>
 <body>
     <div class="content">
@@ -92,31 +94,133 @@
             <div class="hot_sort">
                 <ul>
                     <li>
-                        <a href="#">
-                            <div class="hot_num">
+                        <div class="hot_num">
+                            <a href="#">
                                 <div class="hot_num_top">
                                     <div class="hot_num_top_left">
                                         <p><img src="./images/user.png" alt=""></p>
                                         <p>7200元/季</p>
                                     </div>
                                     <div class="hot_num_top_right">
-                                        <p class="hot_num_top_right_01">这里是花名 <i class="iconfont icon-xingbienan"></i></p>
+                                        <p class="hot_num_top_right_01">这里是花名 <i class="iconfont icon-xingbienan"></i>
+                                        </p>
                                         <p class="hot_num_top_right_02">
                                             <span><i class="iconfont icon-xingxing"></i>5星</span>
                                             <span><i class="iconfont icon-gangwei"></i>前端</span>
                                         </p>
-                                        <p class="hot_num_top_right_03"><i class="iconfont icon-dingwei"></i> 新疆维吾尔自治区新疆维吾尔...</p>
-                                        <p class="hot_num_top_right_04">推荐服务：包月 包季  包半年 包年....</p>
+                                        <p class="hot_num_top_right_03"><i class="iconfont icon-dingwei"></i>
+                                            新疆维吾尔自治区新疆维吾尔...</p>
+                                        <p class="hot_num_top_right_04">推荐服务：包月 包季 包半年 包年....</p>
                                     </div>
                                 </div>
-                                <div class="hot_num_bottom">1</div>
+                                <div class="hot_num_bottom">
+                                    <div class="hot_style">
+                                        <span>能加班</span>
+                                        <span>能加班1</span>
+                                        <span>能加班2</span>
+                                        <span>能加班3</span>
+                                        <span>能加班4</span>
+                                        <span>能加班5</span>
+                                        <span>能加班6</span>
+                                        <span>能加班7</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="hot_link">
+                                <a href="#"><img src="./images/icon_04.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_03.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_02.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_01.png" alt=""></a>
                             </div>
-                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hot_num">
+                            <a href="#">
+                                <div class="hot_num_top">
+                                    <div class="hot_num_top_left">
+                                        <p><img src="./images/user.png" alt=""></p>
+                                        <p>7200元/季</p>
+                                    </div>
+                                    <div class="hot_num_top_right">
+                                        <p class="hot_num_top_right_01">这里是花名 <i class="iconfont icon-xingbienan"></i>
+                                        </p>
+                                        <p class="hot_num_top_right_02">
+                                            <span><i class="iconfont icon-xingxing"></i>5星</span>
+                                            <span><i class="iconfont icon-gangwei"></i>前端</span>
+                                        </p>
+                                        <p class="hot_num_top_right_03"><i class="iconfont icon-dingwei"></i>
+                                            新疆维吾尔自治区新疆维吾尔...</p>
+                                        <p class="hot_num_top_right_04">推荐服务：包月 包季 包半年 包年....</p>
+                                    </div>
+                                </div>
+                                <div class="hot_num_bottom">
+                                    <div class="hot_style">
+                                        <span>能加.班</span>
+                                        <span>能加.班1</span>
+                                        <span>能加.班2</span>
+                                        <span>能加.班3</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="hot_link">
+                                <a href="#"><img src="./images/icon_04.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_03.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_02.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_01.png" alt=""></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="hot_num">
+                            <a href="#">
+                                <div class="hot_num_top">
+                                    <div class="hot_num_top_left">
+                                        <p><img src="./images/user.png" alt=""></p>
+                                        <p>7200元/季</p>
+                                    </div>
+                                    <div class="hot_num_top_right">
+                                        <p class="hot_num_top_right_01">这里是花名 <i class="iconfont icon-xingbienan"></i>
+                                        </p>
+                                        <p class="hot_num_top_right_02">
+                                            <span><i class="iconfont icon-xingxing"></i>5星</span>
+                                            <span><i class="iconfont icon-gangwei"></i>前端</span>
+                                        </p>
+                                        <p class="hot_num_top_right_03"><i class="iconfont icon-dingwei"></i>
+                                            新疆维吾尔自治区新疆维吾尔...</p>
+                                        <p class="hot_num_top_right_04">推荐服务：包月 包季 包半年 包年....</p>
+                                    </div>
+                                </div>
+                                <div class="hot_num_bottom">
+                                    <div class="hot_style">
+                                        <span>能加班</span>
+                                        <span>能加班1</span>
+                                        <span>能加班2</span>
+                                        <span>能加班6</span>
+                                        <span>能加班7</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="hot_link">
+                                <a href="#"><img src="./images/icon_04.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_03.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_02.png" alt=""></a>
+                                <a href="#"><img src="./images/icon_01.png" alt=""></a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
         <!--fixed四个分类-->
+        <div class="footer">
+            <div class="footer_auto">
+                <a href="#" class="active"><p><img src="./images/footer_logo.png" alt=""></p><p>首页</p></a>
+                <a href="#"><p><i class="iconfont icon-sousuo" style="font-size: .5rem;"></i></p><p>找美工</p></a>
+                <a href="#"><p><i class="iconfont icon-1111119"></i></p><p>美工案例</p></a>
+                <a href="#"><p><i class="iconfont icon-gerenzhongxin"></i></p><p>个人中心</p></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

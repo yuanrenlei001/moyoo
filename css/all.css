@@ -26,7 +26,7 @@ input {
     font-family: "Microsoft YaHei" ! important;
 }
 
-ul {
+ul , dl {
     margin: 0;
     padding: 0;
 }
@@ -68,7 +68,7 @@ input[type="button"], input[type="submit"], input[type="reset"] {
 .content {
     max-width: 7.5rem;
     margin: 0 auto;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     position: relative;
 }
 body{
@@ -89,6 +89,44 @@ body{
     width:2.1rem;
     height:.5rem;
     vertical-align: middle;
+}
+.footer {
+    position: fixed;
+    bottom:0;
+    left:50%;
+    margin-left: -3.75rem;
+    width:7.5rem;
+    height:.97rem;
+    box-shadow: 0 -.05rem .1rem rgba(0,0,0,.5);
+    background: #fff;
+    z-index: 999;
+}
+.footer_auto {
+    position: relative;
+    margin: auto;
+    width:7rem;
+    overflow: hidden;
+    padding-top: .15rem;
+}
+.footer_auto a {
+    display: inline-block;
+    color: #333;
+    font-size: .18rem;
+    margin: 0 .49rem;
+    text-align: center;
+}
+.footer_auto .active {
+    color: #f08512;
+}
+.footer_auto p {
+    line-height: .38rem;
+}
+.footer_auto i {
+    font-size: .4rem;
+}
+.footer_auto img {
+    width:.5rem;
+    height:.35rem;
 }
 /*.back{*/
     /*height:1rem;*/
