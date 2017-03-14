@@ -3,27 +3,14 @@
  */
 $(function(){
     $(function(){
-        if ($(window).width()<=320) {
-            $('.hot_sort li').each(function(){
-                var temp= [];
-                var $length = $(this).find('.hot_style span');
-                for (var i=0;i<$length.length;i++){
-                    temp.push($length[i].innerHTML);
-                    if(i>4){
-                        $length[i].remove();
-                        $length[4].innerHTML = '...'
-                    }
-                }
-            });
-        }
-        $('.hot_sort li').each(function(){
-            var temp= [];
+        $('.hot_sort li').each(function () {
+            var temp = [];
             var $length = $(this).find('.hot_style span');
-            for (var i=0;i<$length.length;i++){
+            for (var i = 0; i < $length.length; i++) {
                 temp.push($length[i].innerHTML);
-                if(i>5){
+                if (i > 4) {
                     $length[i].remove();
-                    $length[5].innerHTML = '...'
+                    $length[4].innerHTML = '...'
                 }
             }
         });
