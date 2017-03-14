@@ -104,16 +104,17 @@ body{
 .footer_auto {
     position: relative;
     margin: auto;
-    width:7rem;
-    overflow: hidden;
+    /*width:7rem;*/
+    /*overflow: hidden;*/
     padding-top: .15rem;
 }
 .footer_auto a {
     display: inline-block;
     color: #333;
     font-size: .18rem;
-    margin: 0 .49rem;
+    margin: 0 .4rem;
     text-align: center;
+    width: 1rem;
 }
 .footer_auto .active {
     color: #f08512;
