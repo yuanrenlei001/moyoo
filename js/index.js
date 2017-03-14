@@ -3,17 +3,19 @@
  */
 $(function(){
     $(function(){
-        var mySwiper1 = $('.swiper-product1').swiper({
-            autoplayDisableOnInteraction: false,//点击自动轮播
-            autoplay: 5000,//是否轮播
-            loop: true,//是否循环
-            slidesPerView: 1,//显示几个
-            slidesPerGroup: 1,//每次移动几个
-            paginationClickable: true,
-            pagination: '.pagination'
-        });
-    });
-    $(function(){
+        if ($(window).width()<=320) {
+            $('.hot_sort li').each(function(){
+                var temp= [];
+                var $length = $(this).find('.hot_style span');
+                for (var i=0;i<$length.length;i++){
+                    temp.push($length[i].innerHTML);
+                    if(i>4){
+                        $length[i].remove();
+                        $length[4].innerHTML = '...'
+                    }
+                }
+            });
+        }
         $('.hot_sort li').each(function(){
             var temp= [];
             var $length = $(this).find('.hot_style span');

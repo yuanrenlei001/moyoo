@@ -63,24 +63,26 @@
         </div>
         <!--首页四个分类-->
         <div class="moyoo_sort">
-            <ul>
-                <li>
-                    <p><img src="./images/danbao.png" alt=""></p>
-                    <p>担保交易</p>
-                </li>
-                <li>
-                    <p><img src="./images/syfw.png" alt=""></p>
-                    <p>三天试用</p>
-                </li>
-                <li>
-                    <p><img src="./images/myrz.png" alt=""></p>
-                    <p>猫友认证</p>
-                </li>
-                <li>
-                    <p><img src="./images/qczz.png" alt=""></p>
-                    <p>全程追踪</p>
-                </li>
-            </ul>
+            <div class="moyoo_sort_p">
+                <ul>
+                    <li>
+                        <p><img src="./images/danbao.png" alt=""></p>
+                        <p>担保交易</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/syfw.png" alt=""></p>
+                        <p>三天试用</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/myrz.png" alt=""></p>
+                        <p>猫友认证</p>
+                    </li>
+                    <li>
+                        <p><img src="./images/qczz.png" alt=""></p>
+                        <p>全程追踪</p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!--热门推荐-->
         <div class="hot" id="hot">
@@ -118,16 +120,17 @@
                                         <span>能加班</span>
                                         <span>能加班1</span>
                                         <span>能加班2</span>
-                                        <span>能加班3</span>
-                                        <span>能加班4</span>
-                                        <span>能加班5</span>
-                                        <span>能加班6</span>
-                                        <span>能加班7</span>
+                                        <span>沟通顺畅</span>
+                                        <span>沟通顺畅</span>
+                                        <span>沟通顺畅</span>
+                                        <span>沟通顺畅</span>
+                                        <span>沟通顺畅</span>
                                     </div>
+                                    <div class="hot_change"><img src="./images/icon_06.png" alt=""></div>
                                 </div>
                             </a>
                             <div class="hot_link">
-                                <a href="#"><img src="./images/icon_04.png" alt=""></a>
+                                <a href="http://www.baidu.com"><img src="./images/icon_04.png" alt=""></a>
                                 <a href="#"><img src="./images/icon_03.png" alt=""></a>
                                 <a href="#"><img src="./images/icon_02.png" alt=""></a>
                                 <a href="#"><img src="./images/icon_01.png" alt=""></a>
@@ -215,12 +218,27 @@
         <!--fixed四个分类-->
         <div class="footer">
             <div class="footer_auto">
-                <a href="#" class="active"><p><img src="./images/footer_logo.png" alt=""></p><p>首页</p></a>
-                <a href="#"><p><i class="iconfont icon-sousuo" style="font-size: .5rem;"></i></p><p>找美工</p></a>
-                <a href="#"><p><i class="iconfont icon-1111119"></i></p><p>美工案例</p></a>
-                <a href="#"><p><i class="iconfont icon-gerenzhongxin"></i></p><p>个人中心</p></a>
+                <ul>
+                    <li><a href="#" class="active"><p><img src="./images/footer_logo.png" alt=""></p><p>首页</p></a></li>
+                    <li><a href="#"><p><i class="iconfont icon-sousuo" style="font-size: .5rem;"></i></p><p>找美工</p></a></li>
+                    <li><a href="#"><p><i class="iconfont icon-1111119"></i></p><p>美工案例</p></a></li>
+                    <li><a href="#"><p><i class="iconfont icon-gerenzhongxin"></i></p><p>个人中心</p></a></li>
+                </ul>
             </div>
         </div>
     </div>
+    <script>
+        $(function(){
+            var mySwiper1 = $('.swiper-product1').swiper({
+                autoplayDisableOnInteraction: false,//点击自动轮播
+                autoplay: 5000,//是否轮播
+                loop: true,//是否循环
+                slidesPerView: 1,//显示几个
+                slidesPerGroup: 1,//每次移动几个
+                paginationClickable: true,
+                pagination: '.pagination'
+            });
+        });
+    </script>
 </body>
 </html>

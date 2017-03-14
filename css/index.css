@@ -4,8 +4,9 @@
 .banner .swiper-pagination-switch {  display: inline-block;  width: .12rem;  height: .12rem;  border-radius: 50%;  margin: 0 .05rem;  cursor: pointer;  background-color: #555;  }
 .banner .swiper-active-switch {  background: #fff;  }
 .moyoo_sort {width:7.5rem;padding-top: .28rem;height:1.42rem;background: #fff;position: relative;margin-top: .12rem;overflow: hidden;}
-.moyoo_sort ul {width:6.5rem;margin: auto;position: relative;overflow: hidden;}
-.moyoo_sort ul li {width:1rem;display: inline-block;text-align: center;margin: 0 .29rem;}
+.moyoo_sort_p {width:6.5rem;position: relative;overflow: hidden;margin: auto;}
+.moyoo_sort ul {width:8rem;margin: auto;position: relative;overflow: hidden;}
+.moyoo_sort ul li {float:left;text-align: center;margin: 0 .3rem;}
 .moyoo_sort ul li img {width:.7rem;height:.7rem;}
 .moyoo_sort ul li p {font-size: .24rem;}
 .hot {width:7.5rem;position: relative;margin: auto;}
@@ -36,7 +37,11 @@
 .hot_link {position: absolute;top:0;right:0;z-index: 99;}
 .hot_link img {width:.28rem;height:.28rem;}
 .hot_num_bottom {height:.6rem;line-height: .6rem;}
-.hot_sort .hot_style  span{border: 1px solid #ffea98;background: #fcffd4;color: #333;font-size: .2rem;padding: .05rem .03rem;}
+.hot_sort .hot_style {float:left;margin-top: .15rem;}
+/*.hot_sort .hot_style  span{border: 1px solid #ffea98;background: #fcffd4;color: #333;font-size: .2rem;padding: .05rem .03rem;}*/
+.hot_sort .hot_style  span{border: 1px solid #ffea98;background: #fcffd4;padding:0 .03rem;border-radius: .05rem;color: #333;display: block;float:left;height:.3rem;line-height: .3rem;margin-right: .03rem;}
+.hot_change {float:right;top:.1rem;position: relative;}
+.hot_change img {width:1.08rem;height:.31rem;}
 .opacity{  -webkit-animation: opacity 0.3s linear;  animation: opacity 0.3s linear;  }
 @-webkit-keyframes opacity {
     0% {
