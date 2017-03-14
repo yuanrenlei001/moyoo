@@ -115,8 +115,10 @@ body{
     margin: auto;
 }
 .footer_auto ul li {
-    float:left;
-    margin: 0 .4rem;
+    float: left;
+    margin: 0 .2rem;
+    width: 1.2rem;
+    text-align: center;
     /*width: 1rem;*/
 }
 .footer_auto a {

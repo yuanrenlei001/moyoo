@@ -6,7 +6,7 @@
 .moyoo_sort {width:7.5rem;padding-top: .28rem;height:1.42rem;background: #fff;position: relative;margin-top: .12rem;overflow: hidden;}
 .moyoo_sort_p {width:6.5rem;position: relative;overflow: hidden;margin: auto;}
 .moyoo_sort ul {width:8rem;margin: auto;position: relative;overflow: hidden;}
-.moyoo_sort ul li {float:left;text-align: center;margin: 0 .3rem;}
+.moyoo_sort ul li {float: left;    margin: 0 .25rem;  width: 1.2rem;  text-align: center;}
 .moyoo_sort ul li img {width:.7rem;height:.7rem;}
 .moyoo_sort ul li p {font-size: .24rem;}
 .hot {width:7.5rem;position: relative;margin: auto;}
