@@ -1,0 +1,18 @@
+/*.content_login {  max-width: 7.5rem;  margin: 0 auto;  position: relative;  }*/
+.login_bg {  position: fixed;  width:100%;  height:100%;  top:0;  left:0;  z-index: -1;  }
+.login_bg img {  width:7.5rem;  height:100%;  }
+.login_zoom {position: relative;zoom: 1;z-index: 1;}
+.login_logo {position: relative;padding-top: 2rem;text-align: center;}
+.login_logo img {width:3.83rem;height:.92rem;}
+#logins {text-align: center;width:5.6rem;margin:.57rem auto}
+.account , .password {height:.88rem;margin:0 auto .01rem;}
+.account label , .password label{display: block;height:.8rem;width:5.6rem;margin:0 auto;}
+.user span , .user input {float:left;}
+.user span {display: block;position:absolute;width:.8rem;height:.8rem;text-align: center;line-height: .8rem;background: rgba(0,0,0,.6);}
+.user span i {color: #fff;font-size: .4rem}
+.user input {width:4.6rem;padding-left: 1rem;font-size: .32rem;color: #fff;background: rgba(255,255,255,.2);border: transparent;height:.76rem;line-height: .76rem;}
+.forget {font-size: .26rem;text-align: right;display: block;color: #ccc;margin: .16rem 0 .3rem 0;}
+.forget span {display: inline-block;vertical-align: middle;}
+.forget span:first-child img {width:.3rem;height:.3rem;vertical-align: middle;margin-right: .02rem;}
+#login_sub {width:5.6rem;outline: none;border: transparent;border-radius: .1rem;background: #f08512;font-size: .32rem;color: rgba(255,255,255,.7);height:.8rem;line-height: .8rem;}
+.registered {width:5.58rem;height:.798rem;background: transparent;border: 1px solid #f08512;font-size: .32rem;line-height: .798rem;text-align: center;display: block;color: #f08512;margin-top: .44rem;border-radius: .1rem;}

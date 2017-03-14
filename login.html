@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>登录</title>
+    <meta name="keywords" content="{$web_config.web_keyword}"/>
+    <meta name="description" content="{$web_config.web_description}"/>
+    <link rel="icon" href="./images/ico.ico">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/jquery-1.12.3.min.js"></script>
+    <script src="./js/adaptive-version2.js"></script>
+</head>
+<body>
+    <div class="content">
+        <!--背景图片-->
+        <div class="login_bg"><img src="./images/login_bg.jpg" alt=""></div>
+        <!--主体-->
+        <div class="login_zoom">
+            <p class="login_logo"><img src="./images/login_logo.png" alt=""></p>
+            <!--登录账户/密码-->
+            <form action="" id="logins">
+                <div class="account">
+                    <label for="" class="user">
+                        <span><i class="iconfont icon-see-icon-m3-user"></i></span>
+                        <input type="text" placeholder="账号" id="account">
+                    </label>
+                </div>
+                <div class="password">
+                    <label for="" class="user">
+                        <span><i class="iconfont icon-mima"></i></span>
+                        <input type="text" placeholder="密码" id="password">
+                    </label>
+                </div>
+                <a href="#" class="forget"><span><img src="./images/icon_05.png" alt=""></span><span>忘记密码</span></a>
+                <input type="submit" id="login_sub" value="登录">
+                <a href="#" class="registered">立即注册</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
