@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>人员列表-人员详情</title>
+    <meta name="keywords" content="{$web_config.web_keyword}"/>
+    <meta name="description" content="{$web_config.web_description}"/>
+    <link rel="icon" href="./images/ico.ico">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <script src="./js/jquery-1.12.3.min.js"></script>
+    <script src="./js/adaptive-version2.js"></script>
+    <script src="./js/dropload.js"></script>
+</head>
+<body>
+<div class="content">
+    <!--顶部栏目条-->
+    <div class="top" id="top">
+        <div id="top_title">人员详情</div>
+        <a href="#"><div id="back"><i class="iconfont icon-fanhui"></i></div></a>
+    </div>
+    <!--人员详情-->
+    <div class="user_detail">
+        <!--人员头像-->
+        <div class="user_photo">
+            <dl class="user_imgs"><img src="./images/user.png" alt=""></dl>
+            <dl class="user_name">人员花名</dl>
+            <dl class="user_rank">
+                <div><span><i class="iconfont icon-xingxing" style="font-size: .5rem;"></i></span><span>5星</span></div>
+                <div><span><i class="iconfont icon-gangwei" style="font-size: .4rem;"></i></span><span>前端</span></div>
+            </dl>
+            <dl class="user_hr"></dl>
+            <dl class="user_money">
+                <span>薪</span><span>7200/季</span>
+            </dl>
+        </div>
+        <!--地址/描述等-->
+        <div class="user_information">
+            <ul>
+                <li>
+                    <div class="user_information_num">
+                        <p><span><i class="iconfont icon-jinlingyingcaiwangtubiao40"></i></span><span>服务100人</span></p>
+                        <p><span><i class="iconfont icon-eye"></i></span><span>浏览50000人</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="user_information_address"><span><i class="iconfont icon-dingwei"></i></span><span>浙江省杭州市拱墅区</span></div>
+                </li>
+                <li>
+                    <div class="user_information_tuijian">
+                        <a href="javascript:void(0)">展开</a>
+                        <span>推荐服务：</span>
+                        <span class="tuijian_text on">包月  包季  包半年  包年  详情页  包年包月  包季  包半年  包年  详情页  包年包月  包季  包半年  包年  详情页  包年</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="user_information_tuijian">
+                        <a href="javascript:void(0)">展开</a>
+                        <span>擅长类目：</span>
+                        <span class="tuijian_text on">服装内衣  3C数码  家电办公  化妆美容  服装内  包年包月  包季  包半年  包年  详情页  包年包月  包季  包半年  包年  详情页  包年</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="user_information_tuijian">
+                        <a href="javascript:void(0)">展开</a>
+                        <span>描&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;述：</span>
+                        <span class="tuijian_text on">善于沟通 善于沟通 能加班善于沟通 善于沟通</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--认证-->
+        <div class="user_certification">
+            <div>
+                <ul>
+                    <li>
+                        <div class="certification_left"><img src="./images/icon_10.png" alt="" style="width:.45rem;height:.35rem;"></div>
+                        <div class="certification_right">
+                            <p>身份认证</p>
+                            <p>已认证</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="certification_left"><img src="./images/icon_11.png" alt="" style="width:.25rem;height:.33rem;"></div>
+                        <div class="certification_right">
+                            <p>保密协议</p>
+                            <p>已认证</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="certification_left"><img src="./images/icon_12.png" alt="" style="width:.35rem;height:.36rem;"></div>
+                        <div class="certification_right">
+                            <p>三天退换</p>
+                            <p>已认证</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="certification_left"><img src="./images/icon_13.png" alt="" style="width:.34rem;height:.34rem;"></div>
+                        <div class="certification_right">
+                            <p>保证金缴纳</p>
+                            <p>已认证</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--个人简历/作品展示/客户评论-->
+        <div class="user_show">
+            <div class="user_show_sort">
+                <ul>
+                    <li data-side="1" class="user_active">个人简历</li>
+                    <li data-side="2">作品展示</li>
+                    <li data-side="3">客户评价</li>
+                </ul>
+            </div>
+            <div class="user_show_detail" id="side1" style="display: block;">
+                <ul>
+                    <li>
+                        <div class="show_detail">
+                            <p class="show_detail_01"><span>自我描述</span></p>
+                            <p class="show_detail_02"><span>3年经验</span></p>
+                            <div class="show_detail_text">
+                                <p class="show_detail_03">擅长需求痛点挖掘、市场产品定位、产品模型建立、产品流程优化，对B2B、信息平台、O2O活动社交、职场社交、经验共享、B2C电子商务等领域有比较多的商务等领域有比较多的商务等领域的域的dhausgdaygs dagsgdau</p>
+                                <a class="show_detail_04" href="javascript:void(0)">展开</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="show_detail">
+                            <p class="show_detail_01"><span>项目经验</span></p>
+                            <p class="show_detail_02"><span>猫有网</span><span class="product_time">2016.01--2016.02</span></p>
+                            <div class="show_detail_text">
+                                <p class="show_detail_03">擅长需求痛点挖掘、市场产品定位、产品模型建立、产品流程优化，对B2B、信息平台、O2O活动社交、职场社交、经验共享、B2C电子商务等领域有比较多的商务等领域有比较多的商务等领域的域的dhausgdaygs dagsgdau</p>
+                                <a class="show_detail_04" href="javascript:void(0)">展开</a>
+                            </div>
+                            <div class="show_detail_hr"></div>
+                            <div class="show_detail_text">
+                                <p class="show_detail_03">擅长需求痛点挖掘、市场产品定位、产品模型建立、产品流程优化，对B2B、信息平台、O2O活动社交、职场社交、经验共享、B2C电子商务等领域有比较多的商务等领域有比较多的商务等领域的域的dhausgdaygs dagsgdau</p>
+                                <a class="show_detail_04" href="javascript:void(0)">展开</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="user_show_detail" id="side2">233</div>
+            <div class="user_show_detail" id="side3">32222</div>
+        </div>
+        <!--人员详情结束-->
+    </div>
+    <!--选TA服务-->
+</div>
+
+<script>
+    $(function(){
+        $('.user_information li').each(function(){
+            if($(this).find('.tuijian_text').text().length>22){
+                $(this).find('a').show();
+            }else {
+                $(this).find('a').hide();
+            }
+            $(this).find('a').click(function(){
+                if($(this).text()=='展开'){
+                    $(this).html('收起');
+                }else {
+                    $(this).html('展开');
+                }
+                if($(this).siblings('.tuijian_text').attr('class')=='tuijian_text on') {
+                    $(this).siblings('.tuijian_text').removeClass('on');
+                }else {
+                    $(this).siblings('.tuijian_text').addClass('on');
+                }
+            })
+        });
+        for(var i=0;i<$('.user_show_sort li').length;i++){
+            $('.user_show_sort li')[i].onclick = function(){
+                $('.user_show_sort li').removeClass('user_active');
+                $(this).addClass('user_active');
+                var side = $(this).data('side');
+                $('.user_show_detail').hide();
+                $('#side'+side).show();
+            }
+        }
+        $('.user_show_detail li').each(function(){
+            $(this).find('.show_detail_04').click(function(){
+                if($(this).text()=='展开'){
+                    $(this).siblings('p').addClass('change');
+                    $(this).siblings('p').css('height','100%');
+                    $(this).html('收起')
+                }else{
+                    $(this).siblings('p').removeClass('change');
+                    $(this).siblings('p').css('height','.8rem');
+                    $(this).html('展开')
+                }
+
+                console.log();
+            });
+            console.log()
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>人员列表-搜索为空</title>
+    <meta name="keywords" content="{$web_config.web_keyword}"/>
+    <meta name="description" content="{$web_config.web_description}"/>
+    <link rel="icon" href="./images/ico.ico">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.12.3.min.js"></script>
+    <script src="./js/adaptive-version2.js"></script>
+    <!--<script src="./js/index.js"></script>-->
+    <script src="./js/dropload.js"></script>
+    <script src="./js/public.js"></script>
+</head>
+<body>
+<div class="content">
+    <!--顶部栏目条-->
+    <div class="top" id="top">
+        <div id="top_title"><img src="./images/logo.png" alt=""></div>
+        <div id="move_search"><i class="iconfont icon-sousuo"></i></div>
+        <div class="search">
+            <label for="">
+                <input type="text" placeholder="请输入花名/地区">
+                <span><i class="iconfont icon-sousuo"></i></span>
+            </label>
+            <a href="javascript:void(0)">取消</a>
+        </div>
+    </div>
+    <!--筛选排序-->
+    <div class="select_sort">
+        <div class="select_title">
+            <ul>
+                <li data-side="1"><div class="paixu">排序 <span><i class="iconfont icon-daosanjiao"></i></span></div></li>
+                <li data-side="2"><div class="leimu">类目 <span><i class="iconfont icon-daosanjiao"></i></span></div></li>
+                <li data-side="3"><div class="xingji">星级 <span><i class="iconfont icon-daosanjiao"></i></span></div></li>
+            </ul>
+        </div>
+        <div class="select_list" id="side1">
+            <ul>
+                <li><a href="javascript:void(0)"><span class="select_list_img"><img src="./images/icon_07.png" alt=""></span><span>最新入驻</span></a></li>
+                <li><a href="javascript:void(0)"><span class="select_list_img"><img src="./images/icon_08.png" alt=""></span><span>人气</span></a></li>
+                <li><a href="javascript:void(0)"><span class="select_list_img"><img src="./images/icon_09.png" alt=""></span><span>服务次数</span></a></li>
+            </ul>
+        </div>
+        <div class="select_list" id="side2">
+            <ul>
+                <li><a href="javascript:void(0)"><span>不限</span></a></li>
+                <li><a href="javascript:void(0)"><span>服装内衣</span></a></li>
+                <li><a href="javascript:void(0)"><span>服装内衣1</span></a></li>
+                <li><a href="javascript:void(0)"><span>服装内衣2</span></a></li>
+                <li><a href="javascript:void(0)"><span>服装内衣3</span></a></li>
+            </ul>
+        </div>
+        <div class="select_list" id="side3">
+            <ul>
+                <li><a href="javascript:void(0)"><span>不限</span></a></li>
+                <li><a href="javascript:void(0)"><span>3星</span></a></li>
+                <li><a href="javascript:void(0)"><span>4星</span></a></li>
+                <li><a href="javascript:void(0)"><span>5星</span></a></li>
+                <li><a href="javascript:void(0)"><span>6星</span></a></li>
+                <li><a href="javascript:void(0)"><span>7星</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--搜索为空-->
+    <div id="list_none">
+        <div id="list_none_img">
+            <p><img src="./images/list_none.png" alt=""></p>
+            <p>没有结果</p>
+        </div>
+    </div>
+    <!--fixed四个分类-->
+    <div class="footer">
+        <div class="footer_auto">
+            <ul>
+                <li><a href="#" class="active"><p><img src="./images/footer_logo.png" alt=""></p>
+                    <p>首页</p></a></li>
+                <li><a href="#"><p><i class="iconfont icon-sousuo" style="font-size: .5rem;"></i></p>
+                    <p>找美工</p></a></li>
+                <li><a href="#"><p><i class="iconfont icon-1111119"></i></p>
+                    <p>美工案例</p></a></li>
+                <li><a href="#"><p><i class="iconfont icon-gerenzhongxin"></i></p>
+                    <p>个人中心</p></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            for(var i=0;i<$('.select_title li').length;i++){
+                $('.select_title li')[i].onclick = function(){
+                    $('.select_title li').find('i').attr('class','iconfont icon-daosanjiao');
+                    $(this).find('i').attr('class','iconfont icon-zhengsanjiao');
+                    var side = $(this).data('side');
+                    $('.select_list').hide();
+                    $('#side'+side).slideDown();
+                    if(('#side'+side).target ==false){
+                        console.log(1111);
+                    }
+                }
+            }
+            $('.select_sort .select_list').each(function(){
+                $(this).find('li').click(function(){
+                    var $this = $(this).index()+1;
+                    $('.select_title li').find('i').attr('class','iconfont icon-daosanjiao');
+                    $(this).parent().parent().hide();
+                    $(this).parent().parent().find('span').removeClass('red');
+                    $(this).find('span').addClass('red');
+                });
+
+//                $(this).next().click(function(){
+//                    $(this).find('span').addClass('red');
+//                });
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

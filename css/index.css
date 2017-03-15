@@ -64,6 +64,27 @@
 
 
 
+/*list列表下拉样式*/
+.select_title {width:7.5rem;z-index:101;position: relative;background: #fff;overflow: hidden;height:.76rem;box-shadow: 0 .05rem .1rem rgba(0,0,0,.3);}
+.select_title ul {width:8rem;position: relative;overflow: hidden;height:.76rem;}
+.select_title li {float:left;width:2.48rem;border-right: 1px solid #aaa;height:.56rem;text-align: center;font-size: .32rem;color: #333;margin-top: .1rem;line-height: .66rem;}
+.select_title li:last-child {border-right: none;}
+.select_title i {font-size: .2rem;color: #666;}
+.select_list {left: 50%;position: fixed;top:1.75rem;transform: translateX(-50%);background: rgba(221,221,221,.8);z-index: 100;width:7.5rem;height:100%;display: none;}
+.select_list ul {background: #fff;}
+.select_list li {width:7.1rem;height:1rem;line-height: 1rem;border-bottom: 1px solid #ccc;margin: auto;}
+.select_list img {height:.5rem;vertical-align: middle;}
+.select_list span {display: block;float:left;font-size: .28rem;color: #333;}
+.select_list .red {color: #f08512;}
+.select_list .select_list_img {width:.8rem;text-align: center;}
+#list_none {position: relative;margin: auto;text-align: center;height:10rem;}
+#list_none_img {position: relative;top: 50%;transform: translateY(-50%);}
+#list_none img {width:1.76rem;height:1.76rem;}
+#list_none p {font-size: .36rem;color: #b2b2b2;line-height: .36rem;}
+
+
+
+
 
 
 
