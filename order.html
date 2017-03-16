@@ -12,7 +12,9 @@
     <link rel="icon" href="./images/ico.ico">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/iconfont/iconfont.css">
-    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./dist/pikaday-package.css">
+    <script src="./dist/pikaday-responsive-modernizr.js"></script>
     <script src="./js/jquery-1.12.3.min.js"></script>
     <script src="./js/adaptive-version2.js"></script>
 </head>
@@ -29,19 +31,67 @@
             <div class="order_detail">
                 <div class="order_detail_left"><img src="./images/login_bg.jpg" alt=""></div>
                 <div class="order_detail_right">
-                    <p>这里是花名</p>
-                    <p>包季9折大优惠</p>
-                    <p>包季 10000元 <span>×1</span></p>
-                    <p class="hot_num_top_right_02">
+                    <p class="order_detail_right_01">这里是花名</p>
+                    <p class="order_detail_right_02"><span>包季9折大优惠 </span><span><img src="./images/icon_17.png" alt=""></span></p>
+                    <p class="order_detail_right_03">包季 <span id="order_nums">10000</span>元 <span id="order_num">×1</span></p>
+                    <p class="order_detail_right_04">
                         <span><i class="iconfont icon-xingxing"></i>5星</span>
                         <span><i class="iconfont icon-gangwei"></i>前端</span>
                     </p>
                 </div>
             </div>
-            <div>小计 <span>10000元</span></div>
+            <div class="order_detail_money">小计 <span id="sum">10000</span>元</div>
+        </div>
+        <div class="order_list">
+            <ul>
+                <li class="order_list_01">
+                    <span>购买数量</span>
+                    <div class="count">
+                        <span id="jian"><i class="iconfont icon-jian"></i></span>
+                        <span id="nums"><input type="text" value="1" id="num" readonly="readonly"></span>
+                        <span id="jia"><i class="iconfont icon-jia"></i></span>
+                    </div>
+                </li>
+                <li>
+                    <span>选择服务开始时间</span>
+                    <div class="order_time">
+                        <input name="date" type="date" id="date1" class="test class"/>
+                    </div>
+                </li>
+                <li><span>选择优惠券</span></li>
+            </ul>
         </div>
     </div>
 </div>
+<script src="./dist/moment.min.js"></script>
+<script src="./dist/pikaday.min.js"></script>
+<script src="./dist/pikaday-responsive.js"></script>
+<script>
+    $(function(){
+        var s = $('#num').val();
+        var num = parseInt($('#order_nums').text());
+        $('#jian').click(function(){
+            s--;
+            if(s<=1){s=1}
+            $('#num').val(s);
+            $('#order_num').html('×'+s);
+            $('#sum').text(s*num);
+        });
+        $('#jia').click(function(){
+            s++;
+            $('#num').val(s);
+            $('#order_num').html('×'+s);
+            $('#sum').text(s*num);
+        });
+    });
+        var $date1 = $("#date1");
+        var instance1 = pikadayResponsive($date1);
+//        $date1.on("change", function() {
+//            $("#output1").html($(this).val());
+//        });
+
+</script>
+
 
 </body>
 </html>

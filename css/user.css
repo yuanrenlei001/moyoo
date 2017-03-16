@@ -99,7 +99,7 @@
 .count span {display: inline-block;vertical-align: middle;height:.5rem;background: #e2e2e2;color: #666;line-height: .5rem;text-align: center;}
 #jian , #jia {width:.45rem;}
 #nums {width:.75rem;}
-#nums input {width:100%;text-align: center;background: transparent;border: transparent;outline: none;}
+#nums input {width:100%;text-align: center;background: transparent;border: transparent;outline: none;font-size: .2rem;}
 
 
 

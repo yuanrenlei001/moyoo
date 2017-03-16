@@ -1,0 +1,26 @@
+.order {width:7.5rem;position: relative;margin: auto;}
+.order_information {width:7.5rem;height:3.34rem;position: relative;margin:.12rem auto .21rem;background: #fff;box-shadow: 0 0 .1rem rgba(0,0,0,.5); }
+.order_detail {height:2.66rem;width:7rem;margin: auto;border-bottom: 1px solid #ccc;}
+.order_detail_left , .order_detail_right {float:left;}
+.order_detail_left {width:1.85rem;height:1.85rem;position: relative;top:50%;transform: translateY(-50%);margin-right: .25rem;}
+.order_detail_left img {width:1.85rem;height:1.85rem;border-radius: 50%;}
+.order_detail_right {color: #333;font-size: .24rem;}
+.order_detail_right .order_detail_right_01 {font-size: .32rem;margin-top: .5rem;}
+.order_detail_right p {line-height: .36rem;}
+.order_detail_right_02 {margin-top: .2rem;}
+.order_detail_right_02 span {display: inline-block;vertical-align: top;}
+.order_detail_right_02 span:last-child {position: relative;top:-.2rem;}
+.order_detail_right_02 img {width:.4rem;height:.24rem;}
+.order_detail_right_03 span {margin: 0 .2rem;}
+.order_detail_right_04 {font-size: .24rem;}
+.order_detail_right_04 span:first-child i {font-size: .4rem;margin-left: -.08rem;}
+.order_detail_right_04 span:last-child i {font-size: .3rem;}
+.order_detail_money {width:6rem;margin: auto;text-align: right;height:.67rem;line-height: .67rem;font-size: .24rem;}
+.order_list {width:7.5rem;position: relative;margin:.12rem auto .21rem;background: #fff;box-shadow: 0 0 .1rem rgba(0,0,0,.5); }
+.order_list li {width:7rem;position: relative;margin: auto;height:.95rem;line-height: .95rem;font-size: .28rem;border-bottom: 1px solid #ccc;}
+.count ,.order_time {float:right;}
+.count i {font-size: .3rem;}
+.count span {display: inline-block;vertical-align: middle;height:.5rem;background: #e2e2e2;color: #666;line-height: .5rem;text-align: center;}
+#jian , #jia {width:.45rem;}
+#nums {width:.75rem;}
+#nums input {width:100%;text-align: center;background: transparent;border: transparent;outline: none;font-size: .2rem;}
