@@ -75,12 +75,31 @@
 .user_appraisal_detail_02.change::after {  content:" ";}
 .user_appraisal_detail_03 {position: absolute;bottom:0;right:.2rem;color: #aaa;}
 .user_change {position: fixed;width:7.5rem;margin: auto;left:50%;transform: translateX(-50%);bottom:0;}
-.user_change_bottom {width:7.5rem;position: relative;height:.96rem;line-height: .96rem;}
+.user_change_bottom {width:7.5rem;position: relative;height:.96rem;line-height: .96rem;z-index: 101;}
 .user_change_bottom p {float:left;text-align: center;}
 .user_change_bottom p:first-child {width:.96rem;height:.96rem;background: #eb6253;}
 .user_change_bottom p:first-child i {font-size: .5rem;color: #fff;}
 .user_change_bottom p:first-child i.uon {color: #f08512;}
 .user_change_bottom p:last-child {width:6.54rem;background: #f08512;font-size: .34rem;color: #fff;height:.96rem;}
+.select_service {position: absolute;bottom:0;background: #fff;z-index: 102;width:7.5rem;box-shadow: 0 0 .1rem rgba(0,0,0,.5); display: none;}
+.select_service ul {position: relative;width:7.1rem;margin: auto;}
+.service_change {width:7.5rem;height:.96rem;text-align: center;line-height: .96rem;font-size: .34rem;margin-top: .24rem;}
+.service_change input[type='submit'] {background: #f08512;outline: none;border: transparent;width:7.5rem;height:.96rem;font-size:.34rem;color: #fff;}
+.select_service li {border-bottom: 1px solid #ccc;}
+.select_service_01 {height:.57rem;line-height: .57rem;font-size: .32rem;padding-left: .2rem;position: relative;}
+.select_service_01 span {position: absolute;top:50%;right:.2rem;margin-top: -.17rem;}
+.select_service_01 img {width:.34rem;height:.34rem;}
+.select_service_02 a {display: block;width:5rem;height:.8rem;border: 2px solid #aaa;text-align: center;line-height: .8rem;font-size: .28rem;font-weight: 900;border-radius: .4rem;margin: 0 auto .25rem;position: relative;}
+.select_service_02 u {font-style: normal;position: absolute;top:0;right:0;width:.7rem;height:.7rem;}
+.select_service_02 .select_service_active {border: 2px solid #f08512;color: #f08512;}
+.select_service_02 {padding: .35rem 0;}
+.sum {position: relative;height:.8rem;line-height: .8rem;font-size: .28rem;}
+.count {float:right;}
+.count i {font-size: .3rem;}
+.count span {display: inline-block;vertical-align: middle;height:.5rem;background: #e2e2e2;color: #666;line-height: .5rem;text-align: center;}
+#jian , #jia {width:.45rem;}
+#nums {width:.75rem;}
+#nums input {width:100%;text-align: center;background: transparent;border: transparent;outline: none;}
 
 
 

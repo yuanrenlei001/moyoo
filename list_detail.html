@@ -280,7 +280,33 @@
     <div class="user_change">
         <div class="user_change_bottom">
             <p class="shouchang" id="shouchang"><i class="iconfont icon-shoucang"></i></p>
-            <p>选TA服务</p>
+            <p id="xuan">选TA服务</p>
+        </div>
+        <div class="select_service">
+            <form action="">
+                <ul>
+                    <li><div class="select_service_01">选择服务 <span id="off"><img src="./images/del.png" alt=""></span></div></li>
+                    <li>
+                        <div class="select_service_02">
+                            <a data-id="1"><span>800元/详情页</span></a>
+                            <a data-id="2"><span>11000元/包月</span><u><img src="./images/hot.png" alt=""></u></a>
+                            <a data-id="3"><span>30000元/包季</span></a>
+                            <a data-id="4"><span>100000元/包年</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sum">
+                            <span>购买数量</span>
+                            <div class="count">
+                                <span id="jian"><i class="iconfont icon-jian"></i></span>
+                                <span id="nums"><input type="text" value="1" id="num" readonly="readonly"></span>
+                                <span id="jia"><i class="iconfont icon-jia"></i></span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="service_change"><input type="submit" value="确 定"></div>
+            </form>
         </div>
     </div>
 </div>
@@ -351,6 +377,10 @@
                 $(this).find('i').removeClass('uon');
             }
         });
+        $('.select_service_02 a').click(function(){
+            $('.select_service_02 a').removeClass('select_service_active');
+            $(this).addClass('select_service_active');
+        });
     });
     $(function(){
         var counter = 0;
@@ -404,6 +434,26 @@
                 });
             },
             threshold : 50
+        });
+    });
+    $(function(){
+        var s=$('#num').val();
+        $('#jian').click(function(){
+            s--;
+            if(s<=1){s=1}
+            $('#num').val(s);
+        });
+        $('#jia').click(function(){
+            s++;
+            $('#num').val(s);
+        });
+    });
+    $(function(){
+        $('#xuan').click(function(){
+            $('.select_service').slideDown();
+        });
+        $('#off').click(function(){
+            $('.select_service').slideUp();
         });
     });
 </script>
